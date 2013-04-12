@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript" src="new.js" ></script>
+</head>
+<body>
+
+<script>
+function lenfname2()
+{ 
+                    
+namelength(document.getElementById('firstname').value);
+//alert(document.getElementById('mobileno').value);  
+validatemobile(document.getElementById('mobileno').value);
+//alert("hii rozy"); 
+}
+</script>
+
+<form method="get" id="signup-form" action="#">
+<input type="text" name="First" class="signup-text nameofuser" id="firstname" value="" size="18"  />
+<strong>Mobile No:</strong><br/><input type="text"  name="mobileno" id="mobileno" value="" size="40" /><br /><br />
+<input type="submit" id="signup-submit" value="Create" onclick="javascript:lenfname2();"/>
+</form>
+</body>
+</html>

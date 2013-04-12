@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html >
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>iptv</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+  <style type="text/css">
+        body { font-family:Arial, Helvetica, Sans-Serif; font-size:0.8em;}
+        #report { border-collapse:collapse;}
+        #report h4 { margin:0px; padding:0px;}
+        #report img { float:right;}
+        #report ul { margin:10px 0 10px 40px; padding:0px;}
+        #report th { background:#7CB8E2 url(images/header_bkg.png) repeat-x scroll center left; color:#fff; padding:7px 15px; text-align:left;}
+        #report td {none repeat-x scroll center left; color:#000; padding:7px 15px; }
+        #report tr.over td, tr:hover td{background: #74C8EB;}
+        
+    </style>
+
+<script type="text/javascript" src="script/main.js" ></script>
+<script type="text/javascript" src="script/jquery.js" ></script>
+
+<script>
+$(document).ready(function()
+{
+ //for table row
+  $("tr:even").css("background-color", "#BAD5F1");
+  $("tr:odd").css("background-color", "#FFFFFF");
+});
+
+
+$(document).ready(function()
+	{	$('#jsddm > li').bind('mouseover', jsddm_open);
+		$('#jsddm > li').bind('mouseout',  jsddm_timer);});
+
+	document.onclick = jsddm_close;
+
+</script>
+
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="menu">
+			<ul id="jsddm">
+			<li><a href="home.html">Home</a></li>
+			<li class="current_page_item"><a href="webinarlist.html">Webinar</a>
+			
+				<ul>
+					<li><a href="#">Category 1 </a></li>
+					<li><a href="#">Category 2</a></li>
+					<li><a href="#">Category 3</a></li>
+					<li><a href="#">Category 4</a></li>
+				</ul>
+			</li>
+			<li><a href="live.html">Live</a>
+							
+			</li>
+			<li><a href="profile.html">Profile</a>
+				<ul>
+					<li><a href="#">View Profile</a></li>
+					<li><a href="#">Edit Profile </a></li>
+					
+				</ul>
+				
+			</li>
+			<li><a href="aboutus.html">About Us</a>
+				
+			</li>	
+			<li><a href="#">Admin</a>
+					<ul>
+					<li><a href="addcategory.html">Add Category</a></li>
+					<li><a href="addwebinar.html">Add Webinar </a></li>
+					<li><a href="managewebinar.html">Manage Webinar </a></li>
+					
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">adhyayana   </a></h1>
+			<p> Educate Yourself</a></p>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+	
+<div id="lefttop">
+			
+	</div>
+	<div id="righttop">
+		<div id="search" >
+					<form method="get" action="#">
+						<div>
+							<input type="text" name="s" id="search-text" value="" />
+							<input type="submit" id="search-submit" value="" />
+						</div>
+					</form>
+				</div>
+	</div>
+	
+		<div id="content">
+			
+		<h1>Top Feeds</h1>
+			
+		<div style="clear: both;">&nbsp;</div>
+		
+		
+		
+		
+		 <table id="report">
+        <tr>
+            <th>Video</th>
+            <th>Category</th>
+            <th>Presenter</th>
+            <th>Post Date</th>
+            <th></th>
+        </tr>
+        <a href="live.html"> <tr>
+            <td>Compression</td>
+            <td>Multimedia</td>
+            <td>G.R.M.Reddy</td>
+            <td>10/04/12</td>
+            <td><div class="arrow"></div></td>
+        </tr>  </a>
+        <tr>
+            <td>United Kingdom </td>
+            <td>61,612,300</td>
+            <td>244,820 km2</td>
+            <td>English</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+         <tr>
+            <td>Compression</td>
+            <td>Multimedia</td>
+            <td>G.R.M.Reddy</td>
+            <td>10/04/12</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+       
+        <tr>
+            <td>Canada</td>
+            <td>33,718,000</td>
+            <td>9,984,670 km2</td>
+            <td>English, French</td>
+            <td><div class="arrow"></div></td>
+        </tr>
+        
+       
+        
+    </table>
+		
+		
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				
+							
+					<li>
+					<h3> My Channels</h3>
+					</li>
+						<div style="clear: both;">&nbsp;</div>
+					<li>
+						<input type="button" class = "Buttons" id="subscriptions_button" value="subscriptions" onclick=$('#subscriptions').toggle(100)>
+						<div id= "subscriptions">
+						    <p onmouseover="style= 'color:red' ">Multimedia</p>
+							<p>WebTech</p>
+							<p>MobileComputing<p>
+						
+						</div>
+						<script type="text/javascript">
+						 $('#subscriptions').hide();
+						</script>	
+					</li>
+					
+					<li>
+						<input type="button" class = "Buttons"  id="allchannels_button" value="All Channels" onclick=$('#allchannels').toggle(100)>
+						<div id= "allchannels">
+						    <p onmouseover="style= 'color:red' ">Multimedia</p>
+							<p>WebTech</p>
+							<p>MobileComputing<p>
+						
+						</div>
+						<script type="text/javascript">
+						 $('#allchannels').hide();
+						</script>	
+					</li>
+				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright  All rights reserved. Design by M.Tech(IT).</p>
+	</div>
+	<!-- end #footer -->
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html >
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Test</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+<body>
+<script type="text/javascript" src="jwplayer/jwplayer.js" ></script>
+<script type="text/javascript" src="script/main.js" ></script>
+<script type="text/javascript" src="script/jquery.js" ></script>
+<!-- -->
+
+
+<script  type="text/javascript">
+
+$(document).ready(function(){
+	
+	$(".msg_body").hide();
+	$(".msg_head").click(function(){
+		
+		$(this).next(".msg_body").slideToggle(100);
+	});
+	
+	
+});
+
+ </script>
+
+<div id="wrapper">
+	<div id="menu">
+		<ul>
+				<li class="current_page_item"><a href="home.html">Home</a></li>
+				<li class="msg_head msg_list">Webinar</li>
+							 <div class="msg_body">Multimedia Webtech </div>
+							
+						
+				<li><a href="live.html">Live</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				
+		</ul>
+	</div>
+	<!-- end #menu -->
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">adhyayana   </a></h1>
+			<p> Educate Yourself</a></p>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		
+		
+		<div id="search" >
+					<form method="get" action="#">
+						<div>
+							<input type="text" name="s" id="search-text" value="" />
+							<input type="submit" id="search-submit" value="" />
+						</div>
+					</form>
+				</div>
+		
+			<div id="content">
+			
+				
+					
+					
+					
+					<div id = "ppt">
+						<img id="currentSlide" src="slides/slide1.jpg" width= "574" height = "503">
+					</div>
+					
+					<div style="clear: both;">&nbsp;</div>
+					<p > <strong>Comments</strong><br /><hr></hr> </p>
+					<form action="">
+						<div class="comment">
+							
+							<textarea rows="2" cols="72" id="comment_textarea" onkeyup="char_left()"></textarea>
+						</div>
+					</form>
+					<p id="character_left_msg" >500 Character remaining</p>
+					
+					<div class="post">
+						<div class="entry">Hey its very nice video..</div>
+						<p class="meta"><span class="date">January 15, 2012</span><span class="posted">Posted by <a href="#">Author Name</a></span></p>
+					</div>
+					
+					<div class="post">
+						<div class="entry">I Like it.</div>
+						<p class="meta"><span class="date">January 15, 2012</span><span class="posted">Posted by <a href="#">Author Name</a></span></p>
+					</div>
+					
+					<div class="post">
+						<div class="entry">cool......</div>
+						<p class="meta"><span class="date">January 15, 2012</span><span class="posted">Posted by <a href="#">Author Name</a></span></p>
+					</div>
+					
+					
+				<div style="clear: both;">&nbsp;</div>
+		</div>
+	
+		<!-- end #content -->
+	
+	
+		
+		
+		
+		<div id="sidebar">
+			<ul>
+				
+				<div style="clear: both;">&nbsp;</div>
+				
+				
+				<li>
+				<div id= "video">
+				
+					<div id="container">Loading the player ...</div>
+					 <script type="text/javascript">
+						 jwplayer("container").setup({
+						    flashplayer: "jwplayer/player.swf",
+						    height: 343,
+						    width: 465,
+						    file: "movie.mp4",
+						    
+						    
+						});
+						 
+						 
+						 jwplayer().onTime(function(evt) {
+						      
+							 if (evt.position <= 10.0)
+						    	   setPresentSlide(document.getElementById('img1').src)
+						       
+						       else if(evt.position >10.0 && evt.position<=20.0)
+						        	   setPresentSlide(document.getElementById('img2').src)
+						       else if(evt.position>20.0 && evt.position <=30.0)
+						               setPresentSlide(document.getElementById('img3').src)
+						       else if(evt.position>30.0 && evt.position <=40.0)
+						               setPresentSlide(document.getElementById('img4').src)
+						       else if(evt.position >40.0 && evt.position<=50.0)
+						        	   setPresentSlide(document.getElementById('img5').src)
+						       else if(evt.position>50.0 && evt.position <=60.0)
+						               setPresentSlide(document.getElementById('img6').src)
+						       else if(evt.position>60.0 && evt.position <=70.0)
+						               setPresentSlide(document.getElementById('img7').src)        
+						       else if(evt.position >70.0 && evt.position<=80.0)
+						        	   setPresentSlide(document.getElementById('img8').src)
+						       else if(evt.position>80.0 && evt.position <=90.0)
+						               setPresentSlide(document.getElementById('img9').src)
+						        
+						        else if(evt.position >90.0)
+						               setPresentSlide(document.getElementById('img10').src)
+						    });
+					 </script>
+				
+				</div>
+				<!-- end #Video -->
+					
+				</li>
+				<div style="clear: both;">&nbsp;</div>
+				<li>
+				<div id= "slides">
+				
+					<h2>Slides</h2>
+						<img  id="img1" src="slides/slide1.jpg" alt="Desert" width="60" height="40"  onclick="setPresentSlide(document.getElementById('img1').src),jwplayer().seek(0.5);" />
+						<img id="img2" src="slides/slide2.jpg" alt="Desert" width="60" height="40" onclick="setPresentSlide(document.getElementById('img2').src),jwplayer().seek(10.5);" />
+						<img id="img3" src="slides/slide3.jpg" alt="Desert" width="60" height="40" onclick="setPresentSlide(document.getElementById('img3').src),jwplayer().seek(20.5);" />
+						<img id="img4" src="slides/slide4.jpg" alt="Desert" width="60" height="40" onclick="setPresentSlide(document.getElementById('img4').src),jwplayer().seek(30.5);"/>
+						<img id="img5" src="slides/slide5.jpg" alt="Desert" width="60" height="40" onclick="setPresentSlide(document.getElementById('img5').src),jwplayer().seek(40.5);"/>
+						<img id="img6" src="slides/slide6.jpg" alt="Desert" width="60" height="40" onclick="setPresentSlide(document.getElementById('img6').src),jwplayer().seek(50.5);"/>
+						<img id="img7" src="slides/slide7.jpg" alt="Desert" width="60" height="40" onclick="setPresentSlide(document.getElementById('img7').src),jwplayer().seek(60.5);"/>
+						<img id="img8" src="slides/slide4.jpg" alt="Desert" width="60" height="40" onclick="setPresentSlide(document.getElementById('img8').src),jwplayer().seek(70.5);"/>
+						<img id="img9" src="slides/slide5.jpg" alt="Desert" width="60" height="40" onclick="setPresentSlide(document.getElementById('img9').src),jwplayer().seek(80.5);"/>
+						<img id="img10" src="slides/slide6.jpg" alt="Desert" width="60" height="40" onclick="setPresentSlide(document.getElementById('img10').src),jwplayer().seek(90.5);"/>
+						
+						
+						
+				
+				</div>
+					<!-- end #Slides -->
+				</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright  All rights reserved. Design by M.Tech(IT).</p>
+	</div>
+	<!-- end #footer -->
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Test</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="jwplayer/jwplayer.js" ></script>
+<script type="text/javascript" src="script/main.js" ></script>
+<script type="text/javascript" src="script/jquery.js" ></script>
+
+
+<script type="text/javascript" >
+function loginverify()
+{
+
+	validateusername(document.getElementById('username').value);
+    validatepassword(document.getElementById('username').value, document.getElementById('password').value);
+    
+}
+
+
+
+$(document).ready(function()
+		{	$('#jsddm > li').bind('mouseover', jsddm_open);
+			$('#jsddm > li').bind('mouseout',  jsddm_timer);});
+
+		document.onclick = jsddm_close;
+</script>
+
+
+
+</head>
+<body>
+
+
+<div id="wrapper">
+	<div id="menu">
+		<ul id="jsddm">
+			<li class="current_page_item"><a href="home.html">Home</a></li>
+			<li><a href="webinarlist.html">Webinar</a>
+			
+				<ul>
+					<li><a href="#">Category 1 </a></li>
+					<li><a href="#">Category 2</a></li>
+					<li><a href="#">Category 3</a></li>
+					<li><a href="#">Category 4</a></li>
+				</ul>
+			</li>
+			<li><a href="live.html">Live</a>
+							
+			</li>
+			<li><a href="profile.html">Profile</a>
+				<ul>
+					<li><a href="#">View Profile</a></li>
+					<li><a href="#">Edit Profile </a></li>
+					
+				</ul>
+				
+			</li>
+			<li><a href="aboutus.html">About Us</a>
+				
+			</li>	
+			<li><a href="#">Admin</a>
+					<ul>
+					<li><a href="addcategory.html">Add Category</a></li>
+					<li><a href="addwebinar.html">Add Webinar </a></li>
+					<li><a href="managewebinar.html">Manage Webinar </a></li>
+					
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+	
+	<div id="header">
+			<div id="righttologo">
+					<form id="loginform" action="">		<!-- Login FOrm -->
+							<div class="login">
+								User <br />  <input type="text" name="username"  id="username" value=""  /><br /><a href="forgotpass.html " >Forgot Password </a>
+						  </div>
+						  <div class="login">
+						   		Password<br /> <input type="text"  name="password" id="password" value=""  /><br /><a href="registration.html">Sign Up </a>
+						   </div>
+						  		     
+						   <div class="login"><input id="login_button" type="submit" value="Login" onclick="loginverify()" /></div>
+					</form>
+			
+			</div>
+				
+		
+		
+
+		<div id="logo">
+			<h1><a href="#">dhyayana   </a></h1>
+			<p> Educate Yourself</a></p>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="search" >
+					<form method="get" action="#">
+						<div>
+							<input type="text" name="s" id="search-text" value="" />
+							<input type="submit" id="search-submit" value="" />
+						</div>
+					</form>
+		</div>
+		
+			<div id="content">
+			<h2>Welcome to Adhyayan</h2></br></br>
+      
+       <p>Adhyayan is a website which promotes the learning spirit. It educates, explores and enhances the students learning capabilities. Here you can watch the stored video 
+lectures as well as any live lecture if going on. You can even ask queries to the presenter and he will be interacting to you using chat feature.
+<P>come,learn and have wisdom </P></p>
+  <p> Nitk-mtech-it-2011@googlegroups.com.</p>
+
+  <p>&nbsp;</p>
+
+     </div>
+     <p class="redtext">&nbsp;</p>
+									
+		</div>
+	
+		<!-- end #content -->
+	
+		
+		<div id="sidebar">
+			<ul>
+				
+				
+				
+				<li>
+			
+				<!-- end #Video -->
+					
+				</li>
+				
+				<li>
+				
+					<!-- end #Slides -->
+				</li>
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright  All rights reserved. Design by M.Tech(IT).</p>
+	</div>
+	<!-- end #footer -->
+</body>
+</html>

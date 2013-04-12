@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html >
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>iptv</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<script type="text/javascript" src="script/main.js" ></script>
+<script type="text/javascript" src="script/jquery.js" ></script>
+
+<script type="text/javascript" >
+	$(document).ready(function()
+		{	$('#jsddm > li').bind('mouseover', jsddm_open);
+			$('#jsddm > li').bind('mouseout',  jsddm_timer);});
+
+		document.onclick = jsddm_close;
+</script>
+
+<div id="wrapper">
+	<div id="menu">
+			<ul id="jsddm">
+			<li class="current_page_item"><a href="home.html">Home</a></li>
+			<li><a href="webinarlist.html">Webinar</a>
+			
+				<ul>
+					<li><a href="#">Category 1 </a></li>
+					<li><a href="#">Category 2</a></li>
+					<li><a href="#">Category 3</a></li>
+					<li><a href="#">Category 4</a></li>
+				</ul>
+			</li>
+			<li><a href="live.html">Live</a>
+							
+			</li>
+			<li><a href="profile.html">Profile</a>
+				<ul>
+					<li><a href="#">View Profile</a></li>
+					<li><a href="#">Edit Profile </a></li>
+					
+				</ul>
+				
+			</li>
+			<li><a href="aboutus.html">About Us</a>
+				
+			</li>	
+			<li><a href="#">Admin</a>
+					<ul>
+					<li><a href="addcategory.html">Add Category</a></li>
+					<li><a href="addwebinar.html">Add Webinar </a></li>
+					<li><a href="managewebinar.html">Manage Webinar </a></li>
+					
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">dhyayana   </a></h1>
+			<p> Educate Yourself</a></p>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			
+
+			
+		<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				
+				
+				
+					<li>
+					 My Channels
+					</li>
+						<div style="clear: both;">&nbsp;</div>
+					<li>
+						<input type="button" id="subscriptions_button" value="subscriptions" onclick=$('#subscriptions').toggle(100) />
+						<div id= "subscriptions">
+						    <p onmouseover="style= 'color:red' ">Multimedia</p>
+							<p>WebTech</p>
+							<p>MobileComputing</p>
+						
+						</div>
+						<script type="text/javascript">
+						 $('#subscriptions').hide();
+						</script>	
+					</li>
+					
+					<li>
+						<input type="button" id="allchannels_button" value="All Channels" onclick=$('#allchannels').toggle(100) />
+						<div id= "allchannels">
+						    <p onmouseover="style= 'color:red' ">Multimedia</p>
+							<p>WebTech</p>
+							<p>MobileComputing</p>
+						
+						</div>
+						<script type="text/javascript">
+						 $('#allchannels').hide();
+						</script>	
+					</li>
+				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright  All rights reserved. Design by M.Tech(IT).</p>
+	</div>
+	<!-- end #footer -->
+</body>
+</html>
